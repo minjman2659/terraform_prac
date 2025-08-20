@@ -1,5 +1,5 @@
 resource "aws_iam_user" "minjae" {
-    name = "minjae"
+    name = var.iam_user_list[0]
 }
 
 resource "aws_iam_user_policy" "art_devops_black" {
